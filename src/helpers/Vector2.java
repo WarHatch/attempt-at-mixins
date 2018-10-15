@@ -1,3 +1,5 @@
+package helpers;
+
 /**
  * Encapsulates a 2D vector. Allows chaining methods by returning a reference to itself
  *
@@ -242,7 +244,7 @@ public class Vector2 {
     }
 
     /**
-     * Converts this {@code Vector2} to a string in the format {@code (x,y)}.
+     * Converts this {@code helpers.Vector2} to a string in the format {@code (x,y)}.
      *
      * @return a string representation of this object.
      */
@@ -251,7 +253,7 @@ public class Vector2 {
     }
 
     /**
-     * Sets this {@code Vector2} to the value represented by the specified string according to the format of {@link #toString()}.
+     * Sets this {@code helpers.Vector2} to the value represented by the specified string according to the format of {@link #toString()}.
      *
      * @param v the string.
      * @return this vector for chaining
@@ -267,12 +269,12 @@ public class Vector2 {
                 // Throw a GdxRuntimeException
             }
         }
-        throw new RuntimeException("Malformed Vector2: " + v);
+        throw new RuntimeException("Malformed helpers.Vector2: " + v);
     }
 
 
     /**
-     * Rotates the Vector2 by 90 degrees in the specified direction, where >= 0 is counter-clockwise and < 0 is clockwise.
+     * Rotates the helpers.Vector2 by 90 degrees in the specified direction, where >= 0 is counter-clockwise and < 0 is clockwise.
      */
     public Vector2 rotate90(int dir) {
         float x = this.x;

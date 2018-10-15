@@ -1,10 +1,11 @@
-trait healthyBonus {
+trait resurrectBonus {
   def GetBonuses(warrior: Warrior): Unit = {
     if (warrior.pietyPoints >= pointThreshold) {
-      warrior.pietyPoints = 0
-      warrior.health += 10
+      warrior.health = 100
     }
   }
 
   def pointThreshold: Int = 20
 }
+
+

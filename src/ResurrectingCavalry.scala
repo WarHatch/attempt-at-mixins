@@ -2,7 +2,7 @@ import helpers.Vector2
 
 class ResurrectingCavalry(var _health: Int,
                           var _position: Vector2,
-                         ) extends Warrior(_health, _position) with healthyBonus with legsAndSword {
+                         ) extends Warrior(_health, _position) with resurrectBonus with legsAndSword {
   val stepSize: Float = 3
   val damage: Int = 4
   val range: Int = 1

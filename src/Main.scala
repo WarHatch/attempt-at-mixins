@@ -23,9 +23,9 @@ object Main extends App {
   healthyArcher.Approach(healthyArcher, dummyWarrior)
   healthyArcher.Attack(healthyArcher, dummyWarrior)
 
-  var resurrectingCavalry = new ResurrectingCavalry(100, new Vector2(1, 1))
-  for (a <- 1 to 10) {
-    swordheal.Pray
+  var resurrectingCavalry = new ResurrectingCavalry(1, new Vector2(1, 1))
+  for (i <- 1 to 10) {
+    resurrectingCavalry.Pray
   }
   resurrectingCavalry.GetBonuses(resurrectingCavalry)
 
